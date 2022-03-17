@@ -22,7 +22,7 @@ minetest.register_node("mtmod:unknown", {
  inventory_image = "mtmod_unknown.png",
  tiles = {"mtmod_unknown_node.png"}, 
  groups = { oddly_breakable_by_hand = 0.5 },
- on_destruct = minetest.log([error] mtmod:unknown_node),
+ on_destruct = minetest.chat_send_player(get_player_name(),"mtmod:unknown_node"),
 })
 
 minetest.register_node("mtmod:clouds", {
